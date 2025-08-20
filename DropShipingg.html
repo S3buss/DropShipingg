@@ -3,163 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DropShippingg - Nowoczesny dropshipping</title>
-    <meta name="description" content="Rozwijaj e-biznes bez magazynu i inwestycji w towar. Dropshipping w nowoczesnym wydaniu z automatyzacją, integracjami i pełnym wsparciem.">
+    <title>Twój Sklep Dropshippingowy</title>
+    <meta name="description" content="Sprzedawaj produkty online w modelu dropshippingu. Szybko, nowocześnie, bez magazynu.">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Roboto', Arial, sans-serif; margin: 0; background: #f8fafc; color: #222; }
-        header {
-            background: linear-gradient(90deg, #0087ff 60%, #00c9a7 100%);
-            color: #fff; padding: 60px 0 40px 0; text-align: center;
-        }
-        header h1 { font-size: 2.8em; margin-bottom: 0.2em; }
-        header p { font-size: 1.3em; }
-        nav {
-            background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.04);
-            padding: 13px 0; display: flex; justify-content: center; gap: 18px; position: sticky; top: 0; z-index: 100;
-        }
+        body { font-family: 'Roboto', Arial, sans-serif; margin: 0; background: #f7fafd; color: #222; }
+        header { background: linear-gradient(90deg, #0087ff 60%, #00c9a7 100%); color: #fff; padding: 55px 0 30px 0; text-align: center; }
+        header h1 { font-size: 2.5em; margin-bottom: 0.2em; }
+        nav { background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.04); padding: 13px 0; display: flex; justify-content: center; gap: 18px; position: sticky; top: 0; z-index: 100; }
         nav a { color: #0087ff; text-decoration: none; font-weight: bold; padding: 6px 14px; border-radius: 6px; transition: background 0.2s; }
         nav a:hover { background: #eaf6fe; }
-        section {
-            max-width: 980px; margin: 48px auto; background: #fff;
-            padding: 48px 38px; border-radius: 14px; box-shadow: 0 6px 28px rgba(0,0,0,0.07);
-        }
-        h2 { color: #0087ff; font-size: 2em; margin-top: 0; }
-        .oferta, .zalety { display: flex; flex-wrap: wrap; gap: 32px; margin-top: 24px; }
-        .oferta > div, .zalety > div {
-            flex: 1 1 270px; background: #f7fafd; padding: 26px 22px; border-radius: 10px; min-width: 210px;
-            box-shadow: 0 2px 8px rgba(0,135,255,0.04);
-            display: flex; flex-direction: column; gap: 12px;
-        }
-        .oferta h3, .zalety strong { color: #00a1c7; font-size: 1.15em; margin-bottom: 0.4em; }
-        .jakdziala-steps { list-style: none; padding: 0; margin: 28px 0 0 0; }
-        .jakdziala-steps li {
-            margin-bottom: 20px; font-size: 1.07em; display: flex; align-items: flex-start;
-        }
-        .jakdziala-steps span {
-            font-weight: bold; background: #0087ff; color: #fff; border-radius: 50%;
-            width: 32px; height: 32px; display: inline-flex; align-items: center; justify-content: center; margin-right: 16px;
-        }
-        .faq dt { font-weight: bold; margin-top: 22px; color: #0087ff;}
-        .faq dd { margin-left: 0; margin-bottom: 8px; }
-        .kontakt-list { list-style: none; padding: 0; }
-        .kontakt-list li { margin-bottom: 7px; }
-        .brand { font-weight: bold; color: #00c9a7; }
-        .cta-btn {
-            display: inline-block; background: #00c9a7; color: #fff; font-size: 1.15em;
-            padding: 16px 34px; border: none; border-radius: 8px; margin-top: 25px;
-            box-shadow: 0 2px 8px rgba(0,201,167,0.12); cursor: pointer; font-weight: bold; transition: background 0.22s;
-        }
-        .cta-btn:hover { background: #0087ff; }
-        .hero-img {
-            margin: 28px auto 0 auto; display: block; max-width: 340px; width: 100%; border-radius: 11px; box-shadow: 0 4px 16px rgba(0,135,255,0.08);
-        }
-        footer {
-            text-align: center; padding: 24px 0; background: #222; color: #fff; margin-top: 55px; letter-spacing: 0.1em;
-            font-size: 1em;
-        }
+        .products-section { max-width: 1100px; margin: 45px auto; background: #fff; padding: 44px 24px; border-radius: 14px; box-shadow: 0 6px 28px rgba(0,0,0,0.07);}
+        h2 { color: #0087ff; font-size: 2em; margin-top: 0; text-align: center;}
+        .products-list { display: flex; flex-wrap: wrap; gap: 28px; justify-content: center; margin-top: 32px; }
+        .product-card { background: #f6fafd; border-radius: 11px; box-shadow: 0 2px 12px rgba(0,135,255,0.04); width: 300px; padding: 18px 16px 20px 16px; display: flex; flex-direction: column; align-items: center; }
+        .product-card img { width: 180px; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 14px;}
+        .product-card h3 { font-size: 1.18em; margin: 0 0 10px 0; color: #00a1c7;}
+        .product-card p { font-size: 1em; min-height: 42px; margin-bottom: 10px; }
+        .product-price { font-size: 1.15em; color: #0087ff; font-weight: bold; margin-bottom: 12px;}
+        .add-to-cart-btn { background: #00c9a7; color: #fff; padding: 11px 28px; border-radius: 7px; border: none; font-size: 1em; font-weight: bold; cursor: pointer; transition: background 0.2s;}
+        .add-to-cart-btn:hover { background: #0087ff; }
+        .cart-section { max-width: 700px; margin: 50px auto 0 auto; background: #fff; padding: 30px 20px; border-radius: 14px; box-shadow: 0 6px 28px rgba(0,0,0,0.06);}
+        .cart-section h2 {font-size:1.4em;}
+        .cart-table { width: 100%; border-collapse: collapse; margin-top: 18px;}
+        .cart-table th, .cart-table td { padding: 10px; border-bottom: 1px solid #e1e5ee;}
+        .cart-table th { background: #f3f6fa;}
+        .cart-empty { color: #888; text-align: center; margin-top: 18px;}
+        .checkout-btn { margin-top: 16px; background: #0087ff; color: #fff; padding: 12px 32px; border: none; border-radius: 8px; font-size: 1.1em; font-weight: bold; cursor: pointer; }
+        .checkout-btn:hover { background: #00c9a7;}
+        .contact-section { max-width: 700px; margin: 50px auto 0 auto; background: #fff; padding: 30px 20px; border-radius: 14px; box-shadow: 0 6px 28px rgba(0,0,0,0.06);}
+        footer { text-align: center; padding: 24px 0; background: #222; color: #fff; margin-top: 55px; letter-spacing: 0.1em; font-size: 1em;}
         @media (max-width: 900px) {
-            section { padding: 28px 10px; }
-            .oferta, .zalety { flex-direction: column; }
-        }
-        @media (max-width: 600px) {
-            header h1 { font-size: 2em; }
-            section { margin: 16px 2vw; }
+            .products-list { flex-direction: column; align-items: center;}
+            .products-section, .cart-section, .contact-section {padding: 18px 2vw;}
         }
     </style>
 </head>
 <body>
     <header>
-        <h1><span class="brand">DropShippingg</span> – Twój e-biznes bez magazynu</h1>
-        <p>Nowoczesna platforma dropshippingu: produkty, integracje, automatyzacja. Rozwijaj sprzedaż bez ryzyka i inwestycji w towar!</p>
-        <a href="#oferta" class="cta-btn">Rozpocznij za darmo</a>
-        <img src="https://images.unsplash.com/photo-1515168833906-d2a3b82b302b?auto=format&fit=crop&w=600&q=80" alt="Dropshipping illustration" class="hero-img" />
+        <h1>Twój Sklep Dropshippingowy</h1>
+        <p>Sprzedawaj wybrane produkty online – bez magazynu i ryzyka!</p>
     </header>
     <nav>
-        <a href="#oferta">Oferta</a>
-        <a href="#jak-to-dziala">Jak to działa?</a>
-        <a href="#zalety">Zalety</a>
-        <a href="#faq">FAQ</a>
+        <a href="#produkty">Produkty</a>
+        <a href="#koszyk">Koszyk</a>
         <a href="#kontakt">Kontakt</a>
     </nav>
 
-    <section id="oferta">
-        <h2>Nasza Oferta</h2>
-        <div class="oferta">
-            <div>
-                <h3>Automatyczna integracja sklepów</h3>
-                <p>Połącz swój sklep (Shopify, WooCommerce, Allegro i inne) w kilka minut. Synchronizuj produkty, stany i ceny w czasie rzeczywistym.</p>
-            </div>
-            <div>
-                <h3>Baza bestsellerów</h3>
-                <p>Wybierz produkty ze sprawdzonych hurtowni. Tysiące gotowych ofert do natychmiastowego uruchomienia w Twoim sklepie.</p>
-            </div>
-            <div>
-                <h3>Zamówienia & śledzenie</h3>
-                <p>Automatyczne przekazywanie zamówień do dostawców. Statusy i śledzenie przesyłek dla Twoich klientów bez wysiłku.</p>
-            </div>
-        </div>
-        <a href="#kontakt" class="cta-btn">Zacznij współpracę</a>
-    </section>
-
-    <section id="jak-to-dziala">
-        <h2>Jak działa dropshipping?</h2>
-        <ol class="jakdziala-steps">
-            <li><span>1</span> Klient składa zamówienie w Twoim sklepie internetowym.</li>
-            <li><span>2</span> Zamówienie automatycznie trafia do dostawcy przez naszą platformę.</li>
-            <li><span>3</span> Dostawca wysyła produkt bezpośrednio do klienta (z Twoim logo i danymi).</li>
-            <li><span>4</span> Ty zarabiasz różnicę między ceną sprzedaży a hurtową!</li>
-        </ol>
-    </section>
-
-    <section id="zalety">
-        <h2>Dlaczego warto?</h2>
-        <div class="zalety">
-            <div>
-                <strong>Brak magazynu</strong>
-                <p>Nie inwestujesz w towar ani magazyn – sprzedajesz produkty dostępne u dostawców.</p>
-            </div>
-            <div>
-                <strong>Niskie ryzyko</strong>
-                <p>Płacisz tylko za rzeczywiście sprzedane produkty. Koniec z niesprzedanym towarem!</p>
-            </div>
-            <div>
-                <strong>Automatyzacja</strong>
-                <p>Wszystko dzieje się automatycznie: zamówienia, aktualizacje, powiadomienia.</p>
-            </div>
-            <div>
-                <strong>Wsparcie ekspertów</strong>
-                <p>Pomoc techniczna, materiały szkoleniowe, indywidualne doradztwo dla Twojego e-biznesu.</p>
-            </div>
+    <section class="products-section" id="produkty">
+        <h2>Nasze produkty</h2>
+        <div class="products-list" id="products-list">
+            <!-- Produkty będą generowane przez JS -->
         </div>
     </section>
 
-    <section id="faq">
-        <h2>Najczęściej zadawane pytania (FAQ)</h2>
-        <dl class="faq">
-            <dt>Czy muszę mieć własny magazyn?</dt>
-            <dd>Nie, wszystkie produkty są wysyłane bezpośrednio przez naszych dostawców.</dd>
-
-            <dt>Ile kosztuje korzystanie z platformy?</dt>
-            <dd>Możesz zacząć za darmo. Pobieramy niewielką prowizję od zrealizowanych zamówień lub oferujemy abonament dla większych sklepów.</dd>
-
-            <dt>Jak zacząć?</dt>
-            <dd>Załóż konto, zintegruj sklep i wybierz produkty do sprzedaży. Cały proces trwa kilka minut.</dd>
-        </dl>
+    <section class="cart-section" id="koszyk">
+        <h2>Twój koszyk</h2>
+        <div id="cart-content">
+            <!-- Koszyk generowany przez JS -->
+        </div>
     </section>
 
-    <section id="kontakt">
+    <section class="contact-section" id="kontakt">
         <h2>Kontakt</h2>
-        <p>Masz pytania lub chcesz rozpocząć współpracę? Skontaktuj się z nami:</p>
-        <ul class="kontakt-list">
-            <li>Email: <a href="mailto:kontakt@dropshippingg.pl">kontakt@dropshippingg.pl</a></li>
-            <li>Telefon: +48 123 456 789</li>
-            <li>Adres: ul. Przykładowa 1, 00-000 Warszawa</li>
-        </ul>
+        <p>Masz pytania? Napisz do nas na: <a href="mailto:kontakt@twojsklep.pl">kontakt@twojsklep.pl</a></p>
+        <p>Telefon: +48 123 456 789</p>
+        <p>Adres: ul. Przykładowa 1, 00-000 Warszawa</p>
     </section>
 
     <footer>
-        &copy; 2025 DropShippingg. Wszelkie prawa zastrzeżone.
+        &copy; 2025 Twój Sklep Dropshippingowy. Wszelkie prawa zastrzeżone.
     </footer>
+    <script>
+        // Tu edytujesz ofertę sklepu!
+        const products = [
+            {
+                name: "Inteligentny zegarek X100",
+                description: "Funkcje fitness, powiadomienia i monitoring zdrowia.",
+                price: 199.99,
+                image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=400&q=80"
+            },
+            {
+                name: "Lampka LED do biurka",
+                description: "Regulowane światło, port USB, stylowy design.",
+                price: 69.99,
+                image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+            },
+            {
+                name: "Butelka termiczna 500ml",
+                description: "Utrzymuje temperaturę do 12h, szczelna i lekka.",
+                price: 49.99,
+                image: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80"
+            },
+            {
+                name: "Bezprzewodowe słuchawki BT",
+                description: "Wysoka jakość dźwięku, 18h na jednym ładowaniu.",
+                price: 149.99,
+                image: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=400&q=80"
+            }
+        ];
+
+        function renderProducts() {
+            const list = document.getElementById('products-list');
+            list.innerHTML = '';
+            products.forEach((product, idx) => {
+                const card = document.createElement('div');
+                card.className = 'product-card';
+                card.innerHTML = `
+                    <img src="${product.image}" alt="${product.name}" loading="lazy">
+                    <h3>${product.name}</h3>
+                    <p>${product.description}</p>
+                    <div class="product-price">${product.price.toFixed(2)} zł</div>
+                    <button class="add-to-cart-btn" onclick="addToCart(${idx})">Dodaj do koszyka</button>
+                `;
+                list.appendChild(card);
+            });
+        }
+
+        let cart = [];
+
+        function renderCart() {
+            const cartDiv = document.getElementById('cart-content');
+            if(cart.length === 0) {
+                cartDiv.innerHTML = '<div class="cart-empty">Twój koszyk jest pusty.</div>';
+                return;
+            }
+            let html = '<table class="cart-table"><thead><tr><th>Produkt</th><th>Ilość</th><th>Cena</th><th>Usuń</th></tr></thead><tbody>';
+            cart.forEach((item, idx) => {
+                html += `<tr>
+                    <td>${item.name}</td>
+                    <td>${item.qty}</td>
+                    <td>${(item.price * item.qty).toFixed(2)} zł</td>
+                    <td><button onclick="removeFromCart(${idx})" style="background:#fff;color:#0087ff;border:none;font-size:1.1em;cursor:pointer;">✕</button></td>
+                </tr>`;
+            });
+            html += '</tbody></table>';
+            const total = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
+            html += `<div style="text-align:right;margin-top:14px;font-size:1.15em;">Razem: <strong>${total.toFixed(2)} zł</strong></div>`;
+            html += `<button class="checkout-btn" onclick="checkout()">Zamów</button>`;
+            cartDiv.innerHTML = html;
+        }
+
+        function addToCart(idx) {
+            const prod = products[idx];
+            const found = cart.find(item => item.name === prod.name);
+            if(found) { found.qty++; }
+            else cart.push({ name: prod.name, price: prod.price, qty: 1 });
+            renderCart();
+            window.location.hash = '#koszyk';
+        }
+
+        function removeFromCart(idx) {
+            cart.splice(idx, 1);
+            renderCart();
+        }
+
+        function checkout() {
+            alert('Dziękujemy za zamówienie! (przykładowa funkcja)');
+            cart = [];
+            renderCart();
+        }
+
+        // Inicjalizacja
+        renderProducts();
+        renderCart();
+    </script>
 </body>
 </html>
