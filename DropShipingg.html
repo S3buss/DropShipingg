@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropShippingg - Twoja platforma dropshippingu</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; color: #222; }
+        header { background: #0087ff; color: #fff; padding: 40px 0; text-align: center; }
+        nav { background: #fff; padding: 10px 0; box-shadow: 0 2px 5px rgba(0,0,0,0.02);}
+        nav a { color: #0087ff; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        section { max-width: 900px; margin: 40px auto; background: #fff; padding: 40px 30px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);}
+        h2 { color: #0087ff; }
+        .oferta, .zalety, .faq { display: flex; flex-wrap: wrap; gap: 30px; }
+        .oferta > div, .zalety > div { flex: 1 1 250px; background: #f7fafd; padding: 20px; border-radius: 8px; }
+        .faq dt { font-weight: bold; margin-top: 15px; }
+        .faq dd { margin-left: 0; margin-bottom: 10px; }
+        footer { text-align: center; padding: 20px 0; background: #222; color: #fff; margin-top: 40px; }
+        @media (max-width: 700px) {
+            .oferta, .zalety { flex-direction: column; }
+            section { padding: 20px 10px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DropShippingg</h1>
+        <p>Rozwijaj swój e-biznes bez magazynu i inwestycji w towar!</p>
+    </header>
+    <nav>
+        <a href="#oferta">Oferta</a>
+        <a href="#jak-to-dziala">Jak to działa?</a>
+        <a href="#zalety">Zalety</a>
+        <a href="#faq">FAQ</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <section id="oferta">
+        <h2>Nasza Oferta</h2>
+        <div class="oferta">
+            <div>
+                <h3>Integracja sklepów</h3>
+                <p>Łatwa integracja z najpopularniejszymi platformami e-commerce (Shopify, WooCommerce, Allegro).</p>
+            </div>
+            <div>
+                <h3>Baza produktów</h3>
+                <p>Tysiące gotowych produktów do sprzedaży z automatyczną aktualizacją stanów i cen.</p>
+            </div>
+            <div>
+                <h3>Obsługa zamówień</h3>
+                <p>Automatyczne przekazywanie zamówień do dostawców i śledzenie wysyłek dla Twoich klientów.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="jak-to-dziala">
+        <h2>Jak działa dropshipping?</h2>
+        <ol>
+            <li>Klient składa zamówienie w Twoim sklepie internetowym.</li>
+            <li>Zamówienie automatycznie trafia do dostawcy.</li>
+            <li>Dostawca wysyła produkt bezpośrednio do Twojego klienta.</li>
+            <li>Ty zarabiasz różnicę między ceną sprzedaży a hurtową!</li>
+        </ol>
+        <img src="https://cdn.pixabay.com/photo/2017/01/10/19/05/shopping-1966109_1280.png" alt="Schemat dropshippingu" style="max-width:100%;margin-top:20px;border-radius:8px;">
+    </section>
+
+    <section id="zalety">
+        <h2>Zalety dropshippingu</h2>
+        <div class="zalety">
+            <div>
+                <strong>Brak magazynu</strong>
+                <p>Nie musisz inwestować w towar ani wynajmować powierzchni magazynowej.</p>
+            </div>
+            <div>
+                <strong>Niskie ryzyko</strong>
+                <p>Sprzedajesz to, co rzeczywiście zamówią Twoi klienci – zero niesprzedanych produktów.</p>
+            </div>
+            <div>
+                <strong>Automatyzacja</strong>
+                <p>System automatycznie obsługuje zamówienia i aktualizacje stanów magazynowych.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <h2>Najczęściej zadawane pytania (FAQ)</h2>
+        <dl class="faq">
+            <dt>Czy muszę posiadać własny magazyn?</dt>
+            <dd>Nie, dropshipping nie wymaga własnego magazynu. Wszystko odbywa się bezpośrednio przez dostawcę.</dd>
+
+            <dt>Jak zacząć?</dt>
+            <dd>Załóż konto, zintegruj swój sklep i wybierz produkty do sprzedaży – resztą zajmie się nasza platforma.</dd>
+
+            <dt>Jakie są koszty?</dt>
+            <dd>Płacisz tylko prowizję od realizowanych zamówień lub miesięczny abonament – bez ukrytych opłat.</dd>
+        </dl>
+    </section>
+
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+        <p>Masz pytania? Skontaktuj się z nami:</p>
+        <ul>
+            <li>Email: <a href="mailto:kontakt@dropshippingg.pl">kontakt@dropshippingg.pl</a></li>
+            <li>Telefon: +48 123 456 789</li>
+            <li>Adres: ul. Przykładowa 1, 00-000 Warszawa</li>
+        </ul>
+    </section>
+
+    <footer>
+        &copy; 2025 DropShippingg. Wszelkie prawa zastrzeżone.
+    </footer>
+</body>
+</html>
